@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GHOST ACCESS</title>
+<meta name="description" content="GHOST ACCESS — a puzzle game for iOS. Coming soon.">
+<style>
+  :root {
+    --bg: #0e1117; --fg: #d8e0ea; --muted: #8b98a8; --accent: #3ddc84;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #ffffff; --fg: #1b2430; --muted: #5b6878; --accent: #0b8a4b; }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; padding: 2rem 1.25rem;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    text-align: center;
+  }
+  main { max-width: 34rem; }
+  h1 {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: clamp(1.7rem, 7vw, 2.6rem);
+    letter-spacing: 0.12em; color: var(--accent);
+    margin: 0 0 0.75rem; font-weight: 600;
+  }
+  .cursor {
+    display: inline-block; width: 0.6em; height: 1em;
+    background: var(--accent); vertical-align: text-bottom;
+    margin-left: 0.15em; animation: blink 1.1s step-end infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) {
+    .cursor { animation: none; opacity: 0.6; }
+  }
+  p.tagline { color: var(--fg); margin: 0 0 1.75rem; }
+  p.soon {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    font-size: 0.85rem; color: var(--muted); margin: 0;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>GHOST ACCESS<span class="cursor" aria-hidden="true"></span></h1>
+  <p class="tagline">A puzzle game for iOS.</p>
+  <p class="soon">Coming soon</p>
+
+  <!-- When the policy is ready, uncomment this to link it from the homepage.
+       The App Store Connect privacy policy URL should point straight at
+       https://sathoshimaking.github.io/privacy.html either way.
+  <p class="soon" style="margin-top:2.5rem"><a href="privacy.html">Privacy policy</a></p>
+  -->
+</main>
+</body>
+</html>

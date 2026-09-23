@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GHOST ACCESS — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the GHOST ACCESS iOS game.">
+<!-- DRAFT ONLY: delete this line when you publish for real, so the policy can
+     be indexed normally. It exists so an unfinished policy is not picked up by
+     search engines while it sits in the repo unlinked. -->
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --bg: #0e1117; --panel: #161b22; --fg: #d8e0ea; --muted: #8b98a8;
+    --accent: #3ddc84; --rule: #262d38; --warn-bg: #2a2410; --warn-fg: #f2c94c;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #ffffff; --panel: #f5f7fa; --fg: #1b2430; --muted: #5b6878;
+      --accent: #0b8a4b; --rule: #dde3ea; --warn-bg: #fff8e1; --warn-fg: #8a6d00;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.25rem 5rem;
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 1.6rem; letter-spacing: 0.06em; color: var(--accent);
+    margin: 0 0 0.25rem;
+  }
+  h2 {
+    font-size: 1.1rem; margin: 2.4rem 0 0.6rem;
+    padding-bottom: 0.35rem; border-bottom: 1px solid var(--rule);
+  }
+  h3 { font-size: 0.98rem; margin: 1.5rem 0 0.4rem; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 2rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: 0.35rem 0; }
+  a { color: var(--accent); }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em; background: var(--panel); padding: 0.1em 0.35em; border-radius: 3px;
+  }
+  .summary {
+    background: var(--panel); border-left: 3px solid var(--accent);
+    padding: 1rem 1.25rem; border-radius: 0 6px 6px 0; margin: 0 0 1rem;
+  }
+  .summary p { margin: 0.4rem 0; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: 0.88rem;
+  }
+
+  /* ---- DRAFT MACHINERY -------------------------------------------------
+     Everything below is visible ONLY while <body> carries class="draft".
+     Delete that one class to publish the page clean. Nothing else to edit. */
+  .draft-banner, .verify { display: none; }
+  body.draft .draft-banner, body.draft .verify { display: block; }
+  .draft-banner {
+    background: var(--warn-bg); color: var(--warn-fg);
+    border: 1px solid currentColor; border-radius: 6px;
+    padding: 1rem 1.25rem; margin: 0 0 2rem; font-size: 0.92rem;
+  }
+  .draft-banner h2 { border: 0; margin: 0 0 0.5rem; font-size: 1rem; }
+  .verify {
+    background: var(--warn-bg); color: var(--warn-fg);
+    border-left: 3px solid currentColor; border-radius: 0 4px 4px 0;
+    padding: 0.7rem 1rem; margin: 0.8rem 0; font-size: 0.88rem;
+  }
+  .verify strong { letter-spacing: 0.04em; }
+</style>
+</head>
+
+<!-- ======================================================================
+     TO PUBLISH: change   <body class="draft">   to   <body>
+     That hides the yellow banner and every "CHECK BEFORE PUBLISHING" note
+     in one edit. Do not delete the notes — you will want them again at the
+     next policy change.
+     ====================================================================== -->
+<body class="draft">
+<main>
+
+  <div class="draft-banner">
+    <h2>⚠ DRAFT — not yet publishable</h2>
+    <p>This page is written for the version of GHOST ACCESS that
+    <em>has</em> ads and in-app purchases. The app does not have them yet, so
+    publishing this text today would describe collection that is not happening.</p>
+    <p>Committing this file is harmless — nothing links to it and it carries a
+    <code>noindex</code> tag. What must wait is <strong>giving this URL to App
+    Store Connect as the app's privacy policy</strong>. Do that only when the
+    build containing AdMob and StoreKit is submitted for review.
+    <code>app-ads.txt</code> in this same folder is the opposite: put that up
+    immediately, so Google has time to crawl it.</p>
+    <p>Every yellow note below marks a claim that depends on how the SDK is
+    actually configured. Walk them all once the integration is done, then change
+    <code>&lt;body class="draft"&gt;</code> to <code>&lt;body&gt;</code>.</p>
+  </div>
+
+  <h1>GHOST ACCESS</h1>
+  <p class="updated">Privacy Policy · Last updated: <strong>DD Month 2026</strong></p>
+
+  <div class="verify">
+    <strong>CHECK BEFORE PUBLISHING —</strong> set a real date above, and confirm
+    the app's name here matches the App Store listing name exactly.
+    <code>GHOST ACCESS</code> is the name shown on the game's own menu; the Xcode
+    product is called <code>BreachMatrix</code>. Whichever name the store listing
+    uses is the one that belongs on this page.
+  </div>
+
+  <div class="summary">
+    <p><strong>The short version.</strong> GHOST ACCESS has no accounts, no
+    sign-in, and no servers of its own. Your progress, lives, coins, daily streak
+    and settings are stored on your device and are never sent anywhere.</p>
+    <p>The app does not ask you to identify yourself, and the developer never
+    receives your name, email address, or payment details.</p>
+    <p>Two third parties are involved, and only in narrow ways: <strong>Apple</strong>
+    processes purchases, and <strong>Google</strong> serves the optional rewarded
+    ads you choose to watch. Both are described below.</p>
+  </div>
+
+  <h2>1. Who is responsible</h2>
+  <p>GHOST ACCESS is made and published by an independent developer. Questions
+  about this policy, or about data the app handles, go to:</p>
+  <ul>
+    <li><a href="mailto:emre.yildirimm1910@gmail.com">emre.yildirimm1910@gmail.com</a></li>
+  </ul>
+  <div class="verify">
+    <strong>CHECK BEFORE PUBLISHING —</strong> this is your personal address and
+    will be public on a web page, so it will be scraped by spam bots. Consider a
+    dedicated address such as <code>privacy@…</code> or a forwarding alias.
+    Whatever you use here should also be the support contact in App Store Connect,
+    and it must be an address you actually read — App Review checks it, and data
+    requests arrive there.
+    <br><br>
+    Separately: if you register as a <em>trader</em> under the EU Digital Services
+    Act, your legal name, address and phone number become publicly visible on the
+    App Store listing. That is an App Store Connect decision, not a decision for
+    this page, but the two should not contradict each other.
+  </div>
+
+  <h2>2. What the app stores on your device</h2>
+  <p>All of the following is written to your device's local app storage. It stays
+  on the device, is not transmitted to the developer, and is not shared with
+  anyone:</p>
+  <ul>
+    <li>Which levels you have completed, and your results on them</li>
+    <li>Your current lives and when the next one regenerates</li>
+    <li>Your coin balance and the record of how it changed</li>
+    <li>Your daily-challenge state: streak, best streak, and which days you played</li>
+    <li>Hints used</li>
+    <li>Settings — sound on or off, screen effect on or off</li>
+  </ul>
+  <p>None of this identifies you. If your device is set to back up to iCloud,
+  Apple's own device backup may include it; that copy is governed by
+  <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>, not
+  this one. Deleting the app removes all of it from the device.</p>
+
+  <h2>3. What the developer collects</h2>
+  <p><strong>Nothing.</strong> There is no account system, no sign-in, no
+  analytics SDK, no crash-reporting service, and no server that the app talks to.
+  The developer cannot see how you play, when you play, or whether you play.</p>
+  <div class="verify">
+    <strong>CHECK BEFORE PUBLISHING —</strong> this paragraph is true of the app
+    as built today, and it must be re-checked the moment any analytics, crash
+    reporting, or remote-config library is added. Adding one turns this section
+    false, and also changes the App Store privacy nutrition label.
+  </div>
+
+  <h2>4. Advertising</h2>
+  <p>GHOST ACCESS shows <strong>rewarded ads only</strong>. A rewarded ad never
+  starts on its own: it plays only after you tap a button that offers something
+  in exchange — an extra life, or a second chance at a puzzle you just lost.
+  There are no ads between levels, no ads on launch, and no ads that interrupt a
+  puzzle in progress. You can play the entire game without watching one.</p>
+
+  <h3>Who serves them</h3>
+  <p>Ads are delivered by <strong>Google AdMob</strong>. When you choose to watch
+  one, Google receives information needed to select and deliver that ad and to
+  detect fraud. This typically includes:</p>
+  <ul>
+    <li>A device advertising identifier</li>
+    <li>Your IP address, from which an approximate (city-level) location is inferred</li>
+    <li>Device and app information — model, operating system version, app version</li>
+    <li>Interaction with the ad — that it was shown, watched, or closed</li>
+    <li>Diagnostic information about ad delivery</li>
+  </ul>
+  <p>This data is handled by Google under its own terms. See
+  <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and
+  <a href="https://policies.google.com/technologies/partner-sites">How Google uses
+  information from sites or apps that use our services</a>.</p>
+
+  <h3>Ads are not personalised</h3>
+  <p>The app requests <strong>non-personalised ads</strong>. It does not ask for
+  permission to track you across other companies' apps and websites, so you will
+  not see Apple's App Tracking Transparency prompt, and no advertising profile is
+  built about you through this app. Non-personalised ads are chosen from the
+  general context — such as the app itself and coarse location — rather than from
+  your past behaviour.</p>
+  <div class="verify">
+    <strong>CHECK BEFORE PUBLISHING —</strong> this section is the one most likely
+    to become false, and it is the expensive kind of false. Confirm in code that
+    the ad request actually sets non-personalised ads, and that no App Tracking
+    Transparency request is made anywhere. If personalised ads are ever switched
+    on, this section, the ATT sentence, the nutrition label, and section 6 all
+    have to change together — and ATT permission must be requested before any
+    tracking begins.
+  </div>
+
+  <h3>Consent</h3>
+  <p>If you are in the European Economic Area, the United Kingdom, or Switzerland,
+  Google's consent form is shown <strong>before the first ad is requested</strong>
+  — that is, the first time you tap a button that offers an ad, not when you open
+  the app. If you never tap one, you are never asked. Your choice is remembered
+  and can be changed later from the app's settings.</p>
+  <div class="verify">
+    <strong>CHECK BEFORE PUBLISHING —</strong> two claims here must match what
+    shipped. First, that the consent flow really runs before the first ad request.
+    Second, the last sentence promises a way to <em>change</em> consent later. That
+    control is specified in sub-phase 2 of the monetization design — a conditional
+    <code>[ PRIVACY OPTIONS ]</code> row in Settings. Confirm it actually shipped
+    before publishing, and confirm it appears for a device in the EEA/UK. Do not
+    publish a promise the app does not keep.
+  </div>
+
+  <h2>5. Purchases</h2>
+  <p>The app offers optional in-app purchases. These are processed entirely by
+  <strong>Apple</strong>. The developer never sees your card details, billing
+  address, or Apple Account. What the app receives is a receipt confirming that a
+  purchase completed, which it uses to unlock what you bought.</p>
+  <p>Purchase history, refunds, and subscription management are handled by Apple.
+  See <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+  <div class="verify">
+    <strong>CHECK BEFORE PUBLISHING —</strong> GHOST ACCESS has no subscriptions
+    as designed, only one-off purchases. If that ever changes, this section needs
+    a paragraph on renewal and cancellation. Also confirm the wording matches the
+    products actually on sale.
+  </div>
+
+  <h2>6. Children</h2>
+  <p>GHOST ACCESS is not directed to children under 13, and the developer does not
+  knowingly collect personal information from children. The game contains
+  third-party advertising, which is reflected in its App Store age rating.</p>
+  <div class="verify">
+    <strong>CHECK BEFORE PUBLISHING —</strong> this must agree with the age rating
+    you set in App Store Connect. If the app is ever placed in the Kids category
+    or rated for under-13s, this section is wrong and the whole ad configuration
+    changes: child-directed treatment has to be signalled to AdMob, and stricter
+    rules (COPPA, GDPR provisions on children) apply. Also watch the
+    "unrestricted web access" question in the rating questionnaire — ads that can
+    open a browser affect the answer.
+  </div>
+
+  <h2>7. Your choices</h2>
+  <ul>
+    <li><strong>Don't watch ads.</strong> Every ad in the game is optional, and no
+    part of the game is locked behind one.</li>
+    <li><strong>Reset your device advertising identifier</strong>, or limit ad
+    tracking, in iOS Settings → Privacy &amp; Security.</li>
+    <li><strong>Adjust Google's ad settings</strong> at
+    <a href="https://adssettings.google.com">adssettings.google.com</a>.</li>
+    <li><strong>Delete the app.</strong> This erases everything the game stored on
+    your device. Nothing is retained elsewhere, because nothing was sent
+    elsewhere.</li>
+  </ul>
+
+  <h2>8. Data retention and deletion</h2>
+  <p>The developer holds no data about you, so there is nothing to request a copy
+  of and nothing to delete. Game data lives on your device for as long as the app
+  is installed. Data held by Google in connection with ad delivery is retained
+  under Google's policies, linked above.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If this policy changes, the updated version is posted on this page with a new
+  "last updated" date. Material changes — particularly any change to what is
+  collected — will be reflected here before the app version making the change is
+  released.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions or concerns:
+  <a href="mailto:emre.yildirimm1910@gmail.com">emre.yildirimm1910@gmail.com</a></p>
+
+  <footer>
+    <p>GHOST ACCESS · <code>com.sonictrading.BreachMatrix</code></p>
+    <div class="verify">
+      <strong>NOT LEGAL ADVICE —</strong> this is a drafted starting point written
+      from what the app actually does, not a lawyer's document. It aims to be
+      accurate and complete enough for App Store Connect's privacy policy
+      requirement and AdMob's publisher policies. If you sell in a jurisdiction
+      with specific disclosure rules, or if you ever start collecting personal
+      data, have it reviewed.
+    </div>
+  </footer>
+
+</main>
+</body>
+</html>
