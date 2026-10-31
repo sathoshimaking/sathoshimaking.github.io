@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fizz Cascade</title>
+<meta name="description" content="Pop bubbles down the scale. A new puzzle every day, the same for everyone.">
+<link rel="canonical" href="https://sathoshimaking.github.io/fizz/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fizz Cascade">
+<meta property="og:url" content="https://sathoshimaking.github.io/fizz/">
+<meta property="og:title" content="Fizz Cascade">
+<meta property="og:description" content="Pop bubbles down the scale. A new puzzle every day, the same for everyone.">
+<meta property="og:image" content="https://sathoshimaking.github.io/fizz/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FIZZ cascade, with a board of numbered bubbles">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fizz Cascade">
+<meta name="twitter:description" content="Pop bubbles down the scale. A new puzzle every day, the same for everyone.">
+<meta name="twitter:image" content="https://sathoshimaking.github.io/fizz/og.png">
+<style>
+  @font-face { font-family: "Nunito"; font-weight: 900; font-display: swap; src: url("fonts/nunito_black.ttf") format("truetype"); }
+  @font-face { font-family: "Nunito"; font-weight: 800; font-display: swap; src: url("fonts/nunito_extrabold.ttf") format("truetype"); }
+  @font-face { font-family: "Inter"; font-weight: 700; font-display: swap; src: url("fonts/inter_bold.ttf") format("truetype"); }
+  :root { --frame: #F7A04B; --cream: #FFF8E6; --cola: #3A2115; --accent: #FFC93C; }
+  * { box-sizing: border-box; }
+  html { background: var(--frame); }
+  body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--frame); color: var(--cola);
+         font: 700 1rem/1.5 "Inter", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { flex: 1; width: 100%; max-width: 64rem; margin: 0 auto; padding: 3rem 1rem 2rem;
+         display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; justify-items: center; align-content: center; text-align: center; }
+  .lockup { font-family: "Nunito", "Inter", system-ui, sans-serif; font-weight: 900; line-height: 0.9; margin: 0; }
+  .lockup .fizz { display: block; font-size: 4.5rem; letter-spacing: 0.01em; }
+  .lockup .cascade { display: block; font-size: 2.15rem; font-weight: 800; margin-top: 0.1em; }
+  .line { font-size: 1.15rem; margin: 0.75rem auto 0; max-width: 24rem; }
+  .board { display: block; width: min(15rem, 70vw); height: auto; border-radius: 1.1rem; border: 3px solid var(--cream);
+           box-shadow: 0 0.6rem 1.6rem rgba(58,33,21,0.35); }
+  .badges { display: flex; max-width: 100%; flex-wrap: wrap; gap: 1rem 1.5rem; justify-content: center; align-items: center; margin-top: 0.5rem; }
+  .apple img { display: block; height: 44px; width: auto; }
+  /* Until launch, plain text only: Google's badge may appear only unchanged and as a link (Phase 7 adds it). */
+  .soon { font-size: 1rem; font-weight: 700; }
+  .apple a { display: inline-block; padding: 0.4rem; }
+  a { color: var(--cola); }
+  a:focus-visible { outline: 3px solid var(--cola); outline-offset: 3px; border-radius: 6px; }
+  footer { background: var(--cream); padding: 1.25rem 1rem; text-align: center; font-size: 0.95rem; }
+  footer a { margin: 0 0.75rem; }
+  @media (min-width: 52rem) {
+    main { grid-template-columns: 1fr auto; text-align: left; justify-items: start; gap: 4rem; padding-top: 4rem; }
+    .lockup .fizz { font-size: 7rem; } .lockup .cascade { font-size: 3.3rem; }
+    .line { margin-left: 0; max-width: 28rem; font-size: 1.3rem; }
+    .badges { justify-content: flex-start; }
+    .board { grid-column: 2; grid-row: 1 / span 1; width: 18rem; justify-self: center; }
+    .text { grid-column: 1; grid-row: 1; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="text">
+    <h1 class="lockup" aria-label="Fizz Cascade"><span class="fizz" aria-hidden="true">FIZZ</span><span class="cascade" aria-hidden="true">cascade</span></h1>
+    <p class="line" id="line">Pop bubbles down the scale. A new puzzle every day, the same for everyone.</p>
+    <div class="badges">
+      <span class="apple"><a href="https://apps.apple.com/app/id6826594671"><img id="apple" src="badges/apple-en.svg" alt="Download on the App Store" height="44"></a></span>
+      <span class="soon" id="soon">Coming soon to Google Play</span>
+    </div>
+  </div>
+  <img class="board" src="board.png" alt="" width="540" height="735">
+</main>
+<footer>
+  <a href="privacy.html" id="privacy">Privacy</a><a href="support.html" id="support">Support</a>
+</footer>
+<script>
+(function () {
+  var q = "";
+  try { q = new URLSearchParams(location.search).get("lang") || ""; } catch (e) {}
+  var lang = (q || navigator.language || "en").toLowerCase();
+  if (lang.indexOf("tr") !== 0) return;
+  var $ = function (id) { return document.getElementById(id); };
+  document.documentElement.lang = "tr";
+  document.title = "Fizz Cascade";
+  $("line").textContent = "Baloncukları boy boy patlat. Her gün herkese aynı yeni bulmaca.";
+  $("apple").src = "badges/apple-tr.svg"; $("apple").alt = "App Store'dan indir";
+  $("soon").textContent = "Yakında Google Play'de";
+  $("privacy").textContent = "Gizlilik"; $("support").textContent = "Destek";
+})();
+</script>
+</body>
+</html>
