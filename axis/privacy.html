@@ -23,10 +23,10 @@
 <body>
 <main>
 <h1>AXIS Puzzle</h1>
-<p class="updated">Privacy Policy · Last updated: 22 October 2026</p>
+<p class="updated">Privacy Policy · Last updated: 6 November 2026</p>
 
 <p><strong>The short version.</strong> AXIS Puzzle has no accounts, no sign-in, and no servers of its own. Your progress, lives, coins, daily streak and settings are stored on your device and are never sent to the developer.</p>
-<p>The app does not ask you to identify yourself, and the developer never receives your name, email address, or payment details. Two third parties are involved, and only in narrow ways: Apple processes purchases, and Google serves the optional rewarded ads you choose to watch. Both are described below.</p>
+<p>The app does not ask you to identify yourself, and the developer never receives your name, email address, or payment details. Two third parties are involved, and only in narrow ways: Apple processes purchases, and Google serves the optional rewarded ads you choose to watch and, from version 1.3, provides app analytics used to measure the app's own advertising campaigns. All of this is described below. The app does not track you: there is no App Tracking Transparency prompt, and no advertising identifier is used for analytics.</p>
 
 <h2>1. Who is responsible</h2>
 <p>AXIS Puzzle is made and published by an independent developer. Questions about this policy, or about data the app handles, go to <a href="mailto:emre.yildirimm1910@gmail.com">emre.yildirimm1910@gmail.com</a>.</p>
@@ -42,10 +42,22 @@
   <li>Settings: sound, haptics, and colour palette</li>
   <li>A record of the purchases you made, so that you never lose what you bought</li>
 </ul>
-<p>None of this identifies you. If your device backs up to iCloud, Apple's device backup may include it; that copy is governed by Apple's privacy policy, not this one. Deleting the app removes all of it from the device.</p>
+<p>None of this identifies you. If your device backs up to iCloud, Apple's device backup may include it; that copy is governed by Apple's privacy policy, not this one. Deleting the app removes all of it from the device. Separately, from version 1.3, a few events (such as finishing a level) are sent to Google Analytics, as described in section 3.</p>
 
 <h2>3. What the developer collects</h2>
-<p>Nothing. There is no account system, no sign-in, no analytics SDK, no crash-reporting service, and no server that the app talks to. The developer cannot see how you play, when you play, or whether you play.</p>
+<p>There is no account system, no sign-in, no crash-reporting service, and no server of the developer's own. Up to version 1.2 the app contains no analytics at all.</p>
+<h3>App analytics (from version 1.3)</h3>
+<p>From version 1.3, AXIS Puzzle uses Google Analytics for Firebase so the developer can see, in aggregate, how many people install and open the game, how many complete levels, and which purchases are made, and so Google Ads can measure whether the game's own ad campaigns work. Only these are sent:</p>
+<ul>
+  <li><strong>Automatic app events:</strong> the first time the app is opened, sessions, engagement time, and app or iOS updates</li>
+  <li><strong>Level completed:</strong> which level (or "daily") you finished</li>
+  <li><strong>Purchases:</strong> details of the purchase as confirmed by Apple, such as the item, its price and its currency</li>
+  <li><strong>With each event:</strong> a random app-instance identifier created by Firebase (not your advertising identifier, and not linked to your name or Apple Account), device model, iOS and app version, language, and an approximate location derived from your IP address</li>
+</ul>
+<p>What is <strong>not</strong> collected: your advertising identifier (the app uses the version of Firebase that cannot read it), your identifier for vendor, any user ID, screen views, or anything you type. Ad personalisation is switched off for this data, and it is not used to build an advertising profile about you.</p>
+<p><strong>How the game's ad campaigns are measured without tracking.</strong> Google Ads learns how many installs and purchases its campaigns led to through Apple's SKAdNetwork, which reports only anonymous, aggregated totals, and through Google's on-device conversion measurement, which compares signals on your device so that, as Google describes it, no identifiable information leaves the device. Google turns on-device measurement off in the European Economic Area, the United Kingdom and Switzerland.</p>
+<p><strong>In the EEA, the UK and Switzerland</strong>, where the device's region is set to one of those countries, analytics storage and ad storage are switched off by default: events are sent without the app-instance identifier, and Google uses them only in aggregate. User data is not sent for advertising purposes there.</p>
+<p>This data is processed by Google under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and the <a href="https://firebase.google.com/support/privacy">Firebase privacy and security terms</a>. The developer sees reports, not individual players.</p>
 
 <h2>4. Advertising</h2>
 <p>AXIS Puzzle shows rewarded ads only. A rewarded ad never starts on its own: it plays only after you tap a button that offers something in exchange — an extra life, or a second chance at a level you just lost. There are no ads between levels, no ads on launch, and no ads that interrupt a puzzle in progress. You can play the entire game without watching one.</p>
@@ -77,11 +89,11 @@
   <li><strong>Change your ad consent</strong> at any time in the app's Settings → PRIVACY OPTIONS (shown where consent applies).</li>
   <li><strong>Reset your device advertising identifier</strong>, or limit ad tracking, in iOS Settings → Privacy &amp; Security.</li>
   <li><strong>Adjust Google's ad settings</strong> at <a href="https://adssettings.google.com/">adssettings.google.com</a>.</li>
-  <li><strong>Delete the app.</strong> This erases everything the game stored on your device. Nothing is retained elsewhere, because nothing was sent elsewhere.</li>
+  <li><strong>Delete the app.</strong> This erases everything the game stored on your device, including the analytics app-instance identifier. A new install starts with a new one.</li>
 </ul>
 
 <h2>8. Data retention and deletion</h2>
-<p>The developer holds no data about you, so there is nothing to request a copy of and nothing to delete. Game data lives on your device for as long as the app is installed. Data held by Google in connection with ad delivery is retained under Google's policies, linked above.</p>
+<p>The developer holds no data that identifies you. Game data lives on your device for as long as the app is installed. Analytics events (from version 1.3) are kept by Google Analytics for no more than 14 months and are tied only to the random app-instance identifier; to ask for that data to be deleted, write to the contact address below. Data held by Google in connection with ad delivery is retained under Google's policies, linked above.</p>
 
 <h2>9. Changes to this policy</h2>
 <p>If this policy changes, the updated version is posted on this page with a new "last updated" date. Material changes — particularly any change to what is collected — will be reflected here before the app version making the change is released.</p>
