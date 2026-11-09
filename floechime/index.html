@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Floe Chime: Penguin Puzzle</title>
+<meta name="description" content="Tap a color and the whole huddle slides into the sea. Clear the ice in order.">
+<link rel="canonical" href="https://sathoshimaking.github.io/floechime/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Floe Chime">
+<meta property="og:url" content="https://sathoshimaking.github.io/floechime/">
+<meta property="og:title" content="Floe Chime: Penguin Puzzle">
+<meta property="og:description" content="Tap a color and the whole huddle slides into the sea. Clear the ice in order.">
+<!-- TODO owner: add og:image and twitter:image (1200x630, like FIZZ's og.png) when the store art exists. Left out on purpose until then. -->
+<style>
+  @font-face { font-family: "Nunito"; font-weight: 900; font-display: swap; src: url("fonts/nunito_black.ttf") format("truetype"); }
+  @font-face { font-family: "Nunito"; font-weight: 800; font-display: swap; src: url("fonts/nunito_extrabold.ttf") format("truetype"); }
+  @font-face { font-family: "Inter"; font-weight: 700; font-display: swap; src: url("fonts/inter_bold.ttf") format("truetype"); }
+  :root { --frame: #CFE8F5; --frame-deep: #A9D3EA; --snow: #F6FBFE; --ink: #12304A; --accent: #1B6BA5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --frame: #0F2A40; --frame-deep: #0A1D2E; --snow: #16384F; --ink: #E6F3FB; --accent: #8CCBF0; }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--frame); }
+  body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; color: var(--ink);
+         background: linear-gradient(180deg, var(--frame) 0%, var(--frame-deep) 100%);
+         font: 700 1rem/1.5 "Inter", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { flex: 1; width: 100%; max-width: 64rem; margin: 0 auto; padding: 3rem 1rem 2rem;
+         display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; justify-items: center; align-content: center; text-align: center; }
+  .lockup { font-family: "Nunito", "Inter", system-ui, sans-serif; font-weight: 900; line-height: 0.95; margin: 0; }
+  .lockup .floe { display: block; font-size: 4.2rem; letter-spacing: 0.01em; }
+  .lockup .puzzle { display: block; font-size: 1.9rem; font-weight: 800; margin-top: 0.15em; color: var(--accent); }
+  .line { font-size: 1.15rem; margin: 0.75rem auto 0; max-width: 24rem; }
+  /* The board: a real emulator screenshot of the game (docs/superpowers/screens/phase3). */
+  .board { display: block; width: min(15rem, 70vw); height: auto; border-radius: 1.1rem; border: 3px solid var(--snow);
+           box-shadow: 0 0.6rem 1.6rem rgba(18,48,74,0.35); }
+  .badges { display: flex; max-width: 100%; flex-wrap: wrap; gap: 1rem 1.5rem; justify-content: center; align-items: center; margin-top: 0.5rem; }
+  /* Until launch, plain text only: Google's badge may appear only unchanged and as a link. */
+  .soon { font-size: 1rem; font-weight: 700; }
+  a { color: var(--ink); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+  footer { background: var(--snow); padding: 1.25rem 1rem; text-align: center; font-size: 0.95rem; }
+  footer a { margin: 0 0.75rem; }
+  @media (min-width: 52rem) {
+    main { grid-template-columns: 1fr auto; text-align: left; justify-items: start; gap: 4rem; padding-top: 4rem; }
+    .lockup .floe { font-size: 6.5rem; } .lockup .puzzle { font-size: 3rem; }
+    .line { margin-left: 0; max-width: 28rem; font-size: 1.3rem; }
+    .badges { justify-content: flex-start; }
+    .board { grid-column: 2; grid-row: 1 / span 1; width: 18rem; justify-self: center; }
+    .text { grid-column: 1; grid-row: 1; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="text">
+    <h1 class="lockup" aria-label="Floe Chime: Penguin Puzzle"><span class="floe" aria-hidden="true">Floe Chime</span><span class="puzzle" aria-hidden="true">Penguin Puzzle</span></h1>
+    <p class="line">Tap a color and the whole huddle slides into the sea. Clear the ice in order.</p>
+    <div class="badges">
+      <span class="soon">Coming soon to Google Play</span>
+    </div>
+  </div>
+  <!-- board.png is a real emulator screenshot of the current build (Level 1), not a mock-up. TODO owner: swap for a polished capture after Phase 8. -->
+  <img class="board" src="board.png" alt="A level of Floe Chime: a sheet of ice with penguins of five colors, each marked with its own shape, and the color buttons below." width="720" height="1520">
+</main>
+<footer>
+  <a href="privacy.html">Privacy</a><a href="support.html">Support</a>
+</footer>
+</body>
+</html>
