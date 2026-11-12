@@ -41,6 +41,8 @@
   /* Until launch, plain text only: Google's badge may appear only unchanged and as a link (Phase 7 adds it). */
   .soon { font-size: 1rem; font-weight: 700; }
   .apple a { display: inline-block; padding: 0.4rem; }
+  /* Google's badge PNG carries its own clear space: 66 px tall shows the badge itself at about 44 px. */
+  .play img { display: block; height: 66px; width: auto; }
   a { color: var(--cola); }
   a:focus-visible { outline: 3px solid var(--cola); outline-offset: 3px; border-radius: 6px; }
   footer { background: var(--cream); padding: 1.25rem 1rem; text-align: center; font-size: 0.95rem; }
@@ -61,7 +63,7 @@
     <h1 class="lockup" aria-label="Fizz Cascade"><span class="fizz" aria-hidden="true">FIZZ</span><span class="cascade" aria-hidden="true">cascade</span></h1>
     <p class="line" id="line">Pop bubbles down the scale. A new puzzle every day, the same for everyone.</p>
     <div class="badges">
-      <span class="soon" id="soon">Coming soon to Google Play</span>
+      <span class="play"><a id="playlink" href="https://play.google.com/store/apps/details?id=com.sonictrading.fizz"><img id="play" src="badges/google-play-en.png" alt="Get it on Google Play" height="66"></a></span>
     </div>
   </div>
   <img class="board" src="board.png" alt="" width="540" height="735">
@@ -79,7 +81,8 @@
   document.documentElement.lang = "tr";
   document.title = "Fizz Cascade";
   $("line").textContent = "Baloncukları boy boy patlat. Her gün herkese aynı yeni bulmaca.";
-  $("soon").textContent = "Yakında Google Play'de";
+  $("play").src = "badges/google-play-tr.png"; $("play").alt = "Google Play'den indirin";
+  $("playlink").href = "https://play.google.com/store/apps/details?id=com.sonictrading.fizz&hl=tr";
   $("privacy").textContent = "Gizlilik"; $("support").textContent = "Destek";
 })();
 </script>
