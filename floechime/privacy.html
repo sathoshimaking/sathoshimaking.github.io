@@ -26,10 +26,10 @@
 <main>
 <nav><a href="index.html">Floe Chime</a> · <a href="support.html">Support</a></nav>
 <h1>Floe Chime: Penguin Puzzle</h1>
-<p class="updated">Privacy Policy · Effective date: 9 November 2026</p>
+<p class="updated">Privacy Policy · Effective date: 12 November 2026</p>
 
 <p><strong>The short version.</strong> Floe Chime has no accounts, no sign-in and no servers of its own. Your progress, lives, coins, daily streak and settings are kept on your phone. The developer never receives your name, email address or payment details.</p>
-<p>Three Google services are involved: Google Play handles purchases, Google AdMob shows the game's ads, and Google's Firebase (Analytics and Crashlytics) tells the developer, in anonymous numbers, how the game is played and when it crashes. Each is described below, along with how to switch it off.</p>
+<p>Four services are involved: Google Play handles purchases, Google AdMob shows the game's ads, Google's Firebase (Analytics and Crashlytics) tells the developer, in anonymous numbers, how the game is played and when it crashes, and, only where Google's consent tool says consent is not required, TikTok's measurement SDK tells TikTok whether its ads led to installs, progress and purchases. Each is described below, along with how to switch it off.</p>
 
 <h2>1. Who is responsible</h2>
 <p>Floe Chime is made and published by an independent developer. Questions about this policy, or about data the game handles, go to <a href="mailto:sonictradingteknoloji@gmail.com">sonictradingteknoloji@gmail.com</a>.</p>
@@ -45,7 +45,7 @@
   <li>Your coins, Undos and ice picks</li>
   <li>Your Daily streak and results</li>
   <li>Which hints you have used</li>
-  <li>Your settings: Sound, Haptics, Tap to preview, and your choice on "Share usage and crash data"</li>
+  <li>Your settings: Sound, Haptics, Tap to preview, and your choice on "Share usage, crash and ad measurement data"</li>
   <li>Simple ad counters: how many ads you have watched for a life today, and how recently an ad was shown, so the game can keep ads infrequent</li>
   <li>A record of the purchases you made, so you never lose what you bought</li>
 </ul>
@@ -85,12 +85,36 @@
 </ul>
 <h3>How to opt out</h3>
 <ul>
-  <li><strong>Everyone:</strong> open <em>Settings</em> and turn off <em>Share usage and crash data</em>. This stops Analytics and Crashlytics whatever any consent form says, and deletes crash reports that have not been sent. It is on by default, and it is saved on your phone only.</li>
+  <li><strong>Everyone:</strong> open <em>Settings</em> and turn off <em>Share usage, crash and ad measurement data</em>. This stops Analytics and Crashlytics whatever any consent form says, deletes crash reports that have not been sent, and stops the ad measurement in section 5a (with the one limit stated there). It is on by default, and it is saved on your phone only.</li>
   <li><strong>EEA, UK and Switzerland</strong> (wherever Google's consent tool applies): you can also change your answer in <em>Settings → Privacy Choices</em>.</li>
   <li><strong>Everywhere:</strong> reset or delete your advertising ID (section 7), or uninstall the game.</li>
 </ul>
 <h3>How long it is kept, and deletion requests</h3>
 <p>Analytics data is kept for 2 months and then deleted automatically. Crash reports are kept for as long as Crashlytics' own retention allows, which Google sets. Because the game sets no user ID and never shows you its Firebase installation ID, the developer cannot tell which data came from which person, so a request to delete one person's data cannot be carried out. The retention periods above, uninstalling, and the opt-outs are how data goes away.</p>
+
+<h2>5a. Ad measurement (TikTok Business SDK)</h2>
+<p>The developer may advertise the game on TikTok. To learn whether those ads work, the game contains TikTok's measurement SDK (TikTok Business SDK, version 1.7.1). It tells TikTok, and only TikTok, when someone who may have come from a TikTok ad installs the game, plays it, reaches a milestone or buys something. TikTok is a separate company with its own privacy policy: <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok's Privacy Policy</a>.</p>
+<h3>When it runs</h3>
+<ul>
+  <li><strong>Only where Google's consent tool says consent is not required</strong> for you (for example the United States, Canada, Australia and New Zealand), and only once the game has got that answer on this launch. <strong>Never in the European Economic Area, the United Kingdom or Switzerland</strong>, even if you agree in Google's consent form: there TikTok's SDK is not started and nothing is sent to TikTok.</li>
+  <li><strong>Never with the Settings switch off.</strong> <em>Settings → Share usage, crash and ad measurement data</em> is on by default.</li>
+  <li>With no internet, or before Google's tool has answered, nothing is sent.</li>
+</ul>
+<h3>What TikTok receives</h3>
+<ul>
+  <li><strong>Events the SDK sends by itself:</strong> that the game was installed, that it was opened, and that it was opened again two days after the install.</li>
+  <li><strong>Events the game sends:</strong> that you cleared level 10 (the end of the tutorial), that you cleared level 20, and that you made an in-app purchase: the price and currency Google Play showed you, a product code (a fixed short name for what was bought), and a number made from the purchase by a one-way scramble, so the same purchase is not counted twice. The purchase token itself is never sent. Each of these is sent once, the first time, and only for purchases made after the game started measuring on your phone (not for ones restored on a new phone). No ad views and no Daily results are sent. The game sends no name, email, phone number, user ID or free text.</li>
+  <li><strong>What the SDK adds itself,</strong> as any ad measurement SDK does: your phone's advertising ID, an anonymous ID the SDK creates for this install, a session ID, your IP address (from which an approximate location can be worked out), your browser-style user agent text (phone model and Android version as Android reports them), phone model, Android version, language and region, screen size, network type (Wi-Fi or mobile), the game's version and package name, which store installed it, and the Google Play install referrer (which says which ad or link led to the install). The game switches off the SDK's automatic purchase tracking, its health and crash monitoring, and its extra ad-click postback.</li>
+</ul>
+<h3>Why</h3>
+<p>To measure the developer's TikTok ads (did they lead to installs, to players who got past the tutorial, to purchases) and to let TikTok show those ads to people likely to enjoy the game. The game itself gives TikTok no name, email, phone number or account, but the advertising ID, the anonymous install ID and the technical details above can be used to recognise your phone, and TikTok may combine them with what it knows from elsewhere.</p>
+<h3>How to stop it</h3>
+<ul>
+  <li>Turn off <em>Settings → Share usage, crash and ad measurement data</em>. The game stops sending its own events at once. TikTok's SDK has no stop command, so its automatic events (open and the two-day return) may still go out until you close the game and open it again; from then on it is not started at all.</li>
+  <li>Reset or delete your advertising ID (section 7). This stops the advertising ID being sent. The SDK's anonymous install ID is separate: resetting the advertising ID does not change it, and what does reset it is not verified, so only uninstalling the game, or switching the setting off and reopening the game, is certain to stop it.</li>
+  <li>Uninstall the game.</li>
+</ul>
+<p>The developer cannot see TikTok's data about you, and cannot tell which person any measurement belongs to. For what TikTok does with the data it receives, and to exercise rights you may have against TikTok, see TikTok's Privacy Policy above.</p>
 
 <h2>6. Purchases (Google Play Billing)</h2>
 <p>The game offers optional in-app purchases: <em>Remove Ads</em>, the <em>Supporter Pack</em>, <em>+5 Lives</em>, and <em>Unlimited Lives</em> for 4 hours or 1 day. There are no subscriptions. Google Play processes every purchase. The developer never sees your card details, billing address or Google Account. The game receives only Google Play's confirmation that a purchase completed, checks it, and unlocks what you bought. It keeps a record of that confirmation on your phone.</p>
@@ -98,17 +122,17 @@
 <p><strong>Restore.</strong> <em>Remove Ads</em> and the <em>Supporter Pack</em> belong to the Google Account that bought them. They come back on any Android phone signed in to that account when you tap <em>Restore Purchases</em> (in the Store and in Settings). <em>+5 Lives</em> and the Unlimited Lives passes are consumables: they are not restored, and the passes work only on the phone where they were bought. Refunds and purchase history are handled by Google Play. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
 <h2>7. The advertising ID, and how to reset or delete it</h2>
-<p>The advertising ID is a random number Android gives each phone for advertising and measurement. You can reset it (a new number) or delete it (apps get no number) in your phone's settings. On most phones this is <em>Settings → Privacy → Ads</em> (or <em>Settings → Google → Ads</em>), where you choose <em>Delete advertising ID</em> or <em>Reset advertising ID</em>. Menu names differ between phones. The game keeps working without it. You can also manage Google's ad settings at <a href="https://adssettings.google.com/">adssettings.google.com</a>.</p>
+<p>The advertising ID is a random number Android gives each phone for advertising and measurement. Google (sections 4 and 5) and, where section 5a applies, TikTok may receive it. You can reset it (a new number) or delete it (apps get no number) in your phone's settings. On most phones this is <em>Settings → Privacy → Ads</em> (or <em>Settings → Google → Ads</em>), where you choose <em>Delete advertising ID</em> or <em>Reset advertising ID</em>. Menu names differ between phones. The game keeps working without it. You can also manage Google's ad settings at <a href="https://adssettings.google.com/">adssettings.google.com</a>.</p>
 
 <h2>8. Android backup</h2>
 <p>Backup is switched on for the game. If Google's backup is turned on for your phone, it may keep a copy of the game's saved progress, and the same copy can move to a new phone when you set it up (including a direct phone-to-phone transfer). That copy includes: the levels you cleared and the level in progress, your coins, Undos and ice picks, your lives, your Daily streak, your hints used, your Sound, Haptics and Tap to preview settings, and the record of your purchases. That copy is governed by Google's privacy policy, not this one.</p>
-<p>These things are <strong>not</strong> backed up and never leave the phone: unlimited-lives passes, the lives clock check, the ad counters, whether the consent form has been answered, your <em>Share usage and crash data</em> choice, and Google's own stored consent answer. On a new phone the game may therefore ask for consent again where it applies. You can turn backup off in your phone's settings.</p>
+<p>These things are <strong>not</strong> backed up and never leave the phone: unlimited-lives passes, the lives clock check, the ad counters, whether the consent form has been answered, your <em>Share usage, crash and ad measurement data</em> choice, and Google's own stored consent answer. On a new phone the game may therefore ask for consent again where it applies. You can turn backup off in your phone's settings.</p>
 
 <h2>9. Your choices, in one place</h2>
 <ul>
   <li>Skip the optional ads: every rewarded ad is your choice.</li>
   <li>Turn off ads between levels with <em>Remove Ads</em> or the <em>Supporter Pack</em>.</li>
-  <li>Turn off Analytics and Crashlytics with <em>Settings → Share usage and crash data</em>.</li>
+  <li>Turn off Analytics, Crashlytics and ad measurement with <em>Settings → Share usage, crash and ad measurement data</em>.</li>
   <li>Change your consent in <em>Settings → Privacy Choices</em> (where it applies).</li>
   <li>Reset or delete your advertising ID (section 7).</li>
   <li>Uninstall the game to erase what it saved on the phone.</li>
